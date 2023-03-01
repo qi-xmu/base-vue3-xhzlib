@@ -1,103 +1,77 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+    import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-      <el-button>Default</el-button>
-      <el-scrollbar height="400px">
-          <p v-for="item in 20" :key="item" class="scrollbar-demo-item">{{ item }}</p>
-      </el-scrollbar>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/newHome">newHome</RouterLink>
-      </nav>
+    <div id="top_guide_bg">
+        <div id="top_guide">
+            <div class="nav">
+                <RouterLink to="/course">course</RouterLink>
+            </div>
+            <div class="nav">
+                <RouterLink to="/shop">shop</RouterLink> 
+            </div>
+            <div class="nav">
+                <RouterLink to="/Home">Home</RouterLink>
+            </div>
+            <div class="nav">
+                <RouterLink to="/aboutus">aboutus</RouterLink>
+            </div>
+        </div>
     </div>
-  </header>
-
-  <RouterView />
+    <div id="content">
+        <RouterView />
+    </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
+<style>
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-
-.scrollbar-demo-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  margin: 10px;
-  text-align: center;
-  border-radius: 4px;
-  background: var(--el-color-primary-light-9);
-  color: var(--el-color-primary);
-}
-
-
-@media (min-width: 1024px) {
-  header {
+#top_guide_bg {
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+    /* margin: auto; */
+    background-image: linear-gradient(pink, orange);
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+    align-items: center;
+    text-align: center;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
+#content {
+    width: 100%;
+    min-height: 500px;
     display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+    align-items: center;
+    text-align: center;
+}
 
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
 
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+#top_guide {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 100px;
+    height: 100%;
+    font-size: 20px;
+    font-style: bold;
+    color:white;
+}
+.nav:hover {
+    background-image: linear-gradient(rgb(207, 217, 161), rgb(237, 209, 239));
 }
 </style>
