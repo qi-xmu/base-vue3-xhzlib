@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "element-plus": "^2.2.32",
+    "swiper": "^9.1.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },

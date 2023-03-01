@@ -19,9 +19,7 @@
             </div>
         </div>
     </div>
-    <div id="content">
         <RouterView />
-    </div>
 </template>
 
 <style>
@@ -67,7 +65,7 @@
     margin: auto;
     width: 100px;
     height: 100%;
-    font-size: 20px;
+    font-size: 25px;
     font-style: bold;
     color:white;
 }
