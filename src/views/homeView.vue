@@ -1,8 +1,5 @@
 <template>
     <div id="middle">
-        <div id="logo">
-            <img src="../assets/img/logo.png" style="margin: auto;">
-        </div>
         <div id="rotation_chart">
                 <swiper
                     :slidesPerView="1"
@@ -79,9 +76,14 @@
 
 }
 
+.pictures img {
+    width: 60%;
+    height: auto;
+}
+
 #rotation_chart {
     margin: auto;
-    width: 60%;
+    width: 80%;
     height: auto;
     /* display: flex; */
     /* flex-direction: column; */
@@ -94,8 +96,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0;
-    background-image: linear-gradient(gray,white);
+    margin-top: 1%;
+    /* background-image: linear-gradient(gray,white); */
+    background-color: white;
 }
 
 #logo {
